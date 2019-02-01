@@ -8,7 +8,7 @@ const errorHandler = require('./Helpers/ErrorHandler');
 const userController = require('./Controllers/UserController');
 
 const app = express();
-mongoose.connect('mongodb://localhost:27017/userIdentity', {useNewUrlParser: true});
+mongoose.connect('mongodb://yva:didimoon69@ds040309.mlab.com:40309/userindentity', {useNewUrlParser: true});
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
