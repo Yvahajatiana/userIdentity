@@ -44,7 +44,6 @@ router.get("/:userId", (req, res, next) => {
 router.post("/", (req, res, next) => {
     const newUser = new user(req.body);
     newUser.save()
-        .exec()
         .then(result => {
             res.status(200).json({
                 code: "USER_CREATED",
